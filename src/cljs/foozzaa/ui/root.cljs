@@ -24,7 +24,7 @@
        [:div.container {:style {:margin-top "36px"}}
         [:button.btn.btn-warning {:on-click open} "Paina mua!"]]
        (when open?
-         [:div.dialog-overlay {:class (if opened? "opened")}
+         [:div.dialog-overlay {:class (if opened? "opened") :on-click close}
           [:div.dialog-modal {:class (if opened? "opened")}
            [:div.modal-content
             [:div.modal-header
@@ -56,7 +56,7 @@
        [:div.container {:style {:margin-top "36px"}}
         [:button.btn.btn-warning {:on-click open} "Connexions gones"]]
        (when open?
-         [:div.dialog-overlay.dark {:class (if opened? "opened") :on-click (fn [_] (js/console.log "click") (close))}
+         [:div.dialog-overlay.dark {:class (if opened? "opened") :on-click close}
           [:div.dialog-message
            [:h1 "Oh noes"]
            [:p "Connexions are lost, wait..."]
