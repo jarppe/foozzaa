@@ -15,7 +15,7 @@
   (render-state [_ {:keys [open?]}]
     (html
       [:div.container
-       [:h4 "Confirmation without dialog:"]
+       [:h4 "Confirmation without dialog"]
        [:div.sliding
         [:div.sliding-content {:class (if open? "open")}
          [:button.btn.btn-primary.sliding-element
