@@ -16,9 +16,8 @@ bower_components/
 node_modules/
 src/web/components/
 resources/.gitignore
-resources/public/fonts/
-resources/public/foozzaa.css
 resources/public/foozzaa.js
+resources/public/fonts/
 resources/public/out
 resources/public/shim
 *.log
